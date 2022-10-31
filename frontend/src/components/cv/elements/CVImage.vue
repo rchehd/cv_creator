@@ -1,5 +1,5 @@
 <template>
-<!--  <p>{{ src }}</p>-->
+  <p>{{ src }}</p>
 <!--  <p>{{ getImage(src) }}</p>-->
 <!--  <img :src="test">-->
 </template>

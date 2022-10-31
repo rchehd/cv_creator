@@ -1,5 +1,5 @@
 <template>
-<!--  <CVImage :src="article.relationships.image.links.self.href" />-->
+  <CVImage :src="article.relationships.image.links.self.href" />
 <!--  {{ article.attributes.internalId }}-->
   <CVTitle :text="article.attributes.title" />
   <CVIngredients :ingredients="article.attributes.ingredients"/>
