@@ -1,0 +1,15 @@
+# PHPStorm directory.
+.idea
+
+# MacOS Desktop Services Store files.
+.DS_Store
+
+# DB dumps/backups.
+/.backup/*
+
+# Environment overrides.
+/.env
+
+# Test suite files for IDE autocomplete.
+.codecept
+vendor
