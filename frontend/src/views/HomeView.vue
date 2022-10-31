@@ -1,9 +1,12 @@
 <script setup>
 import TheWelcome from '../components/TheWelcome.vue'
+import Start from '../components/Start'
+import CVList from "../components/CVList";
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <Start />
+    <CVList />
   </main>
 </template>
