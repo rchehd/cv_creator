@@ -2,8 +2,8 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: c0dacf18-0abd-42a6-a5b4-61286b6254ee
-name: Drupal
-mail: ''
+name: 'CV maker'
+mail: cv_maker@gmail.com
 slogan: ''
 page:
   403: ''
