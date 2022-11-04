@@ -113,10 +113,6 @@ install:
 	@$(MAKE) -s prepare\:frontend
 	@$(MAKE) -s up
 	@$(MAKE) -s prepare\:backend
-	$(call message,$(PROJECT_NAME): Installing Contenta CMS...)
-	$(call docker-www-data, php drush -r /var/www/html/web site-install contenta_jsonapi \
-		--db-url=mysql://$(DB_USER):$(DB_PASSWORD)@$(DB_HOST)/$(DB_NAME) --site-name=$(PROJECT_NAME) --account-pass=admin --yes)
-	$(call message,$(PROJECT_NAME): The application is ready!)
 
 ######################################################
 # Installation from existing Platform.sh environment #

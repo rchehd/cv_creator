@@ -53,6 +53,17 @@ services:
       - 'traefik.port=80'
       - 'traefik.frontend.rule=Host:${BACKEND_HOST}, ${TESTS_BACKEND_HOST}'
 
+  pma:
+    image: phpmyadmin/phpmyadmin
+    container_name: "${PROJECT_NAME}_pma"
+    environment:
+      PMA_HOST: $DB_HOST
+      PMA_USER: $DB_USER
+      PMA_PASSWORD: $DB_PASSWORD
+      UPLOAD_LIMIT: 1G
+    labels:
+      - "traefik.http.routers.${BACKEND_HOST}_pma.rule=Host(`pma.${BACKEND_HOST}`)"
+
   traefik:
     image: traefik:1.7.16
     container_name: "${PROJECT_NAME}_traefik"

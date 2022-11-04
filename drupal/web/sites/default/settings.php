@@ -20,7 +20,7 @@ $settings['install_profile'] = 'contenta_jsonapi';
 // your changes. So you'll need to change the line below to this:
 // $config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
 // and then run `make drush cex`.
-$config_directories[CONFIG_SYNC_DIRECTORY] = 'profiles/contrib/contenta_jsonapi/config/sync';
+$settings['config_sync_directory'] = '../config/sync';
 
 // Default development settings.
 // They are overriden in settings.env_production.php.
